@@ -1,0 +1,48 @@
+React Install and Create App
+
+Install Node.js
+Open cmd
+Check version of Node and Npm (c:\User\okayr\node  -v, c:\User\okayr\npm - v)
+c:\User\okayr\E:
+E:\FristReact/npm install -g create-react-app
+E:\FristReact/create-react-app --version
+E:\FristReact/create-react-app myapp
+E:\FristReact/cd myapp
+E:\FristReact/cd/myapp>npm start
+Go to VS Code and select folder ‘myapp’
+
+----------------------------------------------------------------------------------------------------------------
+Json Install and Start
+
+-- Create Folder "API"
+cmd
+npm i -g json-server
+
+
+-- create file in json server 
+json server --watch db.json
+
+"user":[
+{
+"id":1,
+"name":"Ritesh",
+"email":"okayritesh@gmail.com"
+}
+]
+
+/E:API> npm init -y
+/E:API> npm add json-server
+
+-- Go to Package.json and create script
+"script":{
+"serve-json":"josn-server --watch db.json"
+}
+
+-- Final Open in url (port 3000)
+E:/API> npm run serve-json
+
+localhost:3000
+
+Happy Json Server
+
+--------------------------------------------------------------------------------------------
